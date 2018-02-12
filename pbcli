@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function project-list() {
     curl 'https://projectbox.softbox.com.br/api/projetos' \
     -XPOST \
@@ -12,12 +11,9 @@ function project-list() {
 
 function project() {
     case $1 in
-        ls)
+        ls|"")
             project-list
             ;;
-        # *)
-        #     project-list
-        #     ;;
     esac
 }
 
