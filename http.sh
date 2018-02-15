@@ -2,14 +2,14 @@
 
 base_url='https://projectbox.softbox.com.br/api'
 cookie="$(cat cookie)"
-default_headers="-H 'Content-Type:application/json' -H 'Accept:application/json,text/plain,*/*'"
+default_headers="-H Content-Type:application/json -H Accept:application/json,text/plain,*/*"
 
 function post() {
     curl "$base_url$end_point" \
     -XPOST \
     $default_headers \
     -H "$cookie"  \
-    --data-binary "$1" -v  #2> /dev/null 
+    --data-binary "$1" 2> /dev/null 
 }
 
 function http() {
