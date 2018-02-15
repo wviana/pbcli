@@ -16,7 +16,6 @@ function get() {
     curl "$base_url$end_point" \
     $default_headers \
     -H "$cookie"  \
-    --data-binary "$1" 2> /dev/null 
 }
 
 function http() {
