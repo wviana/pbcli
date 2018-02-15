@@ -12,7 +12,7 @@ Mac: `brew install jq`
 Debian/Ubuntu: `sudo apt install jq`
 
 
-### Projectbox acoount
+### Projectbox account
 You'll also need valid user and password for acessing [projectbox](http://projectbox.softbox.com.br)
 
 ### Projectbox autentication cookie.
