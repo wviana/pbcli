@@ -15,7 +15,7 @@ function post() {
 function get() {
     curl "$base_url$end_point" \
     $default_headers \
-    -H "$cookie"  \
+    -H "$cookie"
 }
 
 function http() {
@@ -31,7 +31,7 @@ function http() {
             ;;
         get)
             get "$3"
+            ;;
     esac
-
 }
 
