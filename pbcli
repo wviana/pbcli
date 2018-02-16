@@ -1,12 +1,16 @@
 #!/bin/bash
 
 source projects.sh
+source sprint.sh
 
 for param in "$@"
 do
     case $param in
         projeto)
             project "$2"
+            ;;
+        sprint)
+            sprint "$2"
             ;;
     esac
 done
