@@ -27,9 +27,3 @@ function load_config() {
     source "$configfile";
 
 }
-
-# Append all Information to Log file.
-function Logger () {
-
-    echo "[$1] $DATE -> $2" &>> $log;
-}

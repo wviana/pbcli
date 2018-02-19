@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function project-list() {
+    echo "Staring retrive list " | Logger "INFO" 
     curl 'https://projectbox.softbox.com.br/api/projetos' \
     -XPOST \
     -H 'Content-Type: application/json' \

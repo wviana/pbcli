@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source logger.sh
 source projects.sh
 
 for param in "$@"
